@@ -1,5 +1,5 @@
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Ngăn không cho form tự động gửi đi
+    event.preventDefault(); 
 
     // Lấy dữ liệu từ form
     const username = document.getElementById('username').value;
