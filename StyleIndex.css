@@ -1,0 +1,317 @@
+*{
+    
+    padding : 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;  
+}
+/*----navbar----*/
+nav{
+    background-color: hsl(210, 13%, 16%)  ;
+    margin-bottom: -16px;
+}
+
+nav ul{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+nav ul li, a{
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+nav ul li:nth-child(2){
+    position: relative;
+}
+nav ul li:nth-child(2) input {
+    width: 500px;
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+    padding-left: 7px;
+}
+nav ul li:nth-child(2) i {
+    position: absolute;
+    right:13px;
+    color:  hsl(210, 13%, 16%);
+    font-size: 20px;
+    line-height: 35px;
+    cursor: pointer;
+}
+nav ul li:nth-child(6) {
+    position: relative;
+}
+nav ul li:nth-child(6)::before{
+    position: absolute;
+    content:"0";
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(199, 28, 28);
+    border-radius: 7px;
+    right:0;
+    font-size:10px;
+    padding-left: 5px;
+}
+nav ul li:nth-child(6) button {
+    font-size: 22px;
+    cursor: pointer;
+    height: 40px;
+    width: 50px;
+    padding: 0 5px;
+    background-color: transparent;
+    color:white;
+    border: 1px solid hsl(206, 12%, 23%);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+
+nav ul li:nth-child(6) button:hover{
+    background-color: hsl(206, 10%, 28%);
+}
+
+nav ul li:nth-child(5):hover a{
+   color: hsl(202, 53%, 55%);
+}
+nav ul li:nth-child(4):hover a{
+    color: hsl(202, 53%, 55%);
+}
+nav ul li:nth-child(3):hover a{
+    color: hsl(202, 53%, 55%);
+}
+ /*-----menu-navbar------*/
+ .menu-navbar{
+    background-color:hsl(210, 14%, 33%);
+    padding-top: 20px;  
+    padding-bottom: 1px;
+ }
+
+ .menu-navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+ }
+.menu-navbar ul li a{
+    font-size: 16px;
+    color:hsl(0, 0%, 95%);
+}
+.menu-navbar  ul  li{
+    padding: 6px 6px;
+    border-radius: 10px;
+}
+.menu-navbar ul li:hover{
+    background-color: hsl(211, 14%, 40%) ;
+}
+/*----------adress-form----------*/
+.adress-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    color: #333;
+    display: none;
+    z-index: 999;
+}
+.adress-form-content{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    border-radius: 7px;
+}
+.adress-form-content form {
+    padding: 0 40px;
+}
+.adress-form-content h2{
+    font-size: 18px;
+    padding : 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.adress-form-content h2 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: rgb(238, 27, 27);
+    font-size: 13px;
+    border-radius: 6px;
+}
+.adress-form-content h2 span:hover{
+    background-color: rgb(240, 35, 35);
+    color: white;
+}
+.adress-form-content form input, select{
+    height: 45px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+.adress-form-content form button{
+    margin-top: 20px;
+    height: 43px;
+    width: 70%;
+    border-radius: 7px;
+    background-color: hsl(210, 14%, 33%);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.adress-form-content form button:hover{
+    background-color:#ddd;
+    color:  hsl(210, 14%, 33%);
+}
+/*-----------------submenu--------------*/
+.menu-navbar-content li{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    background-color: hsl(210, 14%, 33%);
+    width: 200px;
+    height: auto;
+    left: -30px; 
+    top: 100%;
+    padding: 20px 0px;
+    border: 1px solid white;
+    display: none;
+    margin:0px;
+    z-index:999;
+}
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+}
+.submenu  ul  li{
+    width: 100%;
+    border-radius: 0px;
+}
+
+.menu-navbar-content ul li:hover .submenu{
+    display:block;
+}
+/*-----------------slider------------*/
+li{
+    list-style: none;
+}
+.slider{
+    padding: 20px 0;
+    height: 350px;
+}
+.slider-content{
+    display: flex;
+    justify-content: space-between;
+}
+.slider-content-left{
+    width: 65%;
+}
+.slider-content-right{
+    width: 35%;
+}
+.slider-content-left-top{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.slider-content-left-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-content-left-bottom{
+    display: flex;
+    justify-content:space-between;
+    border-top: 2px solid #ddd;
+    height: 50px;
+}
+.slider-content-left-bottom li{
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 6px;
+    height: 100%;
+    line-height: 38px;
+    font-size: 13px;
+    position: relative;
+}
+
+.slider-content-left-bottom li::before{
+    display: block;
+    content:"";
+    position: absolute;
+    height: 70%;
+    width: 1px;
+    background-color: #ddd;
+    right:0;
+}
+.slider-content-left-bottom li.active{
+    border-top: 4px solid hsl(210, 14%, 33%)
+}
+.slider-content-right{
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: space-around;
+}
+.slider-content-right li{
+    width:80%;
+    height: 40%;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.slider-content-right li img{
+    height: 200px;
+    width: 480px;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btn i{
+    color: #333;
+    font-size: 30px;
+    height: 50px;
+    width: 25px;
+    background-color: hsl(0, 0%, 85%);
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.slider-content-left-top:hover i {
+    opacity: 1;
+}
